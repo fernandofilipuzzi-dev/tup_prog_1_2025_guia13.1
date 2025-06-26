@@ -72,10 +72,10 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(25, 210);
+            btnSalir.Location = new Point(25, 214);
             btnSalir.Margin = new Padding(4);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(96, 44);
+            btnSalir.Size = new Size(96, 55);
             btnSalir.TabIndex = 3;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -115,7 +115,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(422, 267);
+            ClientSize = new Size(422, 282);
             Controls.Add(labelCantViajes);
             Controls.Add(label1);
             Controls.Add(listBoxPatentes);

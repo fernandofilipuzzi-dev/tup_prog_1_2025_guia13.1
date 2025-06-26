@@ -39,10 +39,10 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(25, 27);
+            btnRegistrar.Location = new Point(25, 13);
             btnRegistrar.Margin = new Padding(4);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(96, 32);
+            btnRegistrar.Size = new Size(96, 55);
             btnRegistrar.TabIndex = 0;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
@@ -72,10 +72,10 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(25, 210);
+            btnSalir.Location = new Point(25, 214);
             btnSalir.Margin = new Padding(4);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(96, 42);
+            btnSalir.Size = new Size(96, 54);
             btnSalir.TabIndex = 3;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -115,7 +115,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(422, 265);
+            ClientSize = new Size(422, 277);
             Controls.Add(labelCantViajes);
             Controls.Add(label1);
             Controls.Add(listBoxPatentes);
@@ -128,7 +128,7 @@
             Margin = new Padding(4);
             Name = "Principal";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Forma 1 de resolverlo";
             ResumeLayout(false);
             PerformLayout();
         }

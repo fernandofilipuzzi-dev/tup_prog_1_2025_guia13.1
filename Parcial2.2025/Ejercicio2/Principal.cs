@@ -44,6 +44,10 @@ namespace Ejercicio2
 
                 labelCantViajes.Text = servicio.VerCantidadViajes().ToString();
             }
+            else 
+            {
+                MessageBox.Show("Canceló la carga del viaje");
+            }
         }
 
         private void btnVer_Click(object sender, EventArgs e)
@@ -58,6 +62,7 @@ namespace Ejercicio2
                 string p;
                 double k;
                 servicio.VerVehiculo(n, out p, out k);
+                kms += k;
                 fresumen.listbBoxPatentes.Items.Add($"{k,10:f2} {p,-10}");
             }
 

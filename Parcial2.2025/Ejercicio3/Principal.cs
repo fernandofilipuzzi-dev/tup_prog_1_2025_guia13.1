@@ -5,6 +5,8 @@ namespace Ejercicio3
 {
     public partial class Principal : Form
     {
+        #region atributos y métodos del problema
+
         Vehiculo[] vehiculos = new Vehiculo[15];
         int cantVehiculos = 0;
         int viajes = 0;
@@ -60,7 +62,7 @@ namespace Ejercicio3
             return idx;
         }
 
-        public void Ordenar()
+        void Ordenar()
         {
             for (int p = 0; p < cantVehiculos - 1; p++)
             {
@@ -79,15 +81,17 @@ namespace Ejercicio3
             vehiculos[c] = ve;
         }
 
-        public int VerCantidadVehiculos()
+        int VerCantidadVehiculos()
         {
             return cantVehiculos;
         }
 
-        internal int VerCantidadViajes()
+        int VerCantidadViajes()
         {
             return viajes;
         }
+
+        #endregion
 
         public Principal()
         {
@@ -126,6 +130,10 @@ namespace Ejercicio3
 
                 labelCantViajes.Text = viajes.ToString();
             }
+            else 
+            {
+                MessageBox.Show("Canceló la carga del viaje");
+            }
         }
 
         private void btnVer_Click(object sender, EventArgs e)
@@ -135,13 +143,14 @@ namespace Ejercicio3
             Fresumen fresumen = new Fresumen();
             fresumen.listbBoxPatentes.Items.Clear();
             double kms = 0;
-            for (int n = 0; n < cantVehiculos; n++)
+            for (int n = 0; n < VerCantidadVehiculos(); n++)
             {
                 Vehiculo ve = vehiculos[n];
+                kms += ve.VerKilometraje();
                 fresumen.listbBoxPatentes.Items.Add($"{ve.VerKilometraje(),10:f2} {ve.VerPatente(),-10}");
             }
 
-            if (viajes > 0 && cantVehiculos > 0)
+            if (VerCantidadViajes() > 0 && VerCantidadVehiculos() > 0)
             {
                 double promedio = kms / viajes;
                 fresumen.listbBoxPatentes.Items.Add($"Promedio: {promedio:f2}");

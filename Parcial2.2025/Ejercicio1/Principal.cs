@@ -105,6 +105,10 @@ namespace Ejercicio1
 
                 labelCantViajes.Text = viajes.ToString();
             }
+            else 
+            {
+                MessageBox.Show("Canceló la carga del viaje");
+            }
         }
 
         private void btnVer_Click(object sender, EventArgs e)
@@ -130,6 +134,8 @@ namespace Ejercicio1
             {
                 fresumen.listbBoxPatentes.Items.Add($"No hay vehiculos o viajes realizados");
             }
+
+            fresumen.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

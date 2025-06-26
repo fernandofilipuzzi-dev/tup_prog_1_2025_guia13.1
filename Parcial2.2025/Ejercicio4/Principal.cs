@@ -8,8 +8,6 @@ namespace Ejercicio4
     {
         Servicio servicio = new Servicio();
 
-
-
         public Principal()
         {
             InitializeComponent();
@@ -47,6 +45,10 @@ namespace Ejercicio4
 
                 labelCantViajes.Text = servicio.VerCantidadViajes().ToString();
             }
+            else 
+            {
+                MessageBox.Show("Canceló la carga del viaje");
+            }
         }
 
         private void btnVer_Click(object sender, EventArgs e)
@@ -59,6 +61,7 @@ namespace Ejercicio4
             for (int n = 0; n < servicio.VerCantidadVehiculos(); n++)
             {
                 Vehiculo ve = servicio.VerVehiculo(n);
+                kms += ve.VerKilometraje();
                 fresumen.listbBoxPatentes.Items.Add($"{ve.VerKilometraje(),10:f2} {ve.VerPatente(),-10}");
             }
 
