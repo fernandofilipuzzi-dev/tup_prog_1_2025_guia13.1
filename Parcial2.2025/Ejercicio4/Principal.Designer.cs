@@ -42,7 +42,7 @@
             btnRegistrar.Location = new Point(25, 27);
             btnRegistrar.Margin = new Padding(4);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(96, 32);
+            btnRegistrar.Size = new Size(96, 41);
             btnRegistrar.TabIndex = 0;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio3.Models
 {
-    internal class Vehiculo
+    public class Vehiculo
     {
         string patente;
         double kilometraje;
