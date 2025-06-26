@@ -8,7 +8,7 @@ namespace Ejercicio4
     {
         Servicio servicio = new Servicio();
 
-        
+
 
         public Principal()
         {
@@ -45,7 +45,7 @@ namespace Ejercicio4
 
                 servicio.CargarViaje(p, k);
 
-                labelCantViajes.Text= servicio.VerCantidadViajes().ToString();
+                labelCantViajes.Text = servicio.VerCantidadViajes().ToString();
             }
         }
 
@@ -72,6 +72,11 @@ namespace Ejercicio4
             {
                 fresumen.listbBoxPatentes.Items.Add($"No hay vehiculos o viajes realizados");
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

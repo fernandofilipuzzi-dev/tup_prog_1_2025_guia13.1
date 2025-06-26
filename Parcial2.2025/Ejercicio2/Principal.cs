@@ -42,7 +42,7 @@ namespace Ejercicio2
 
                 servicio.CargarViaje(p, k);
 
-                labelCantViajes.Text= servicio.VerCantidadViajes().ToString();
+                labelCantViajes.Text = servicio.VerCantidadViajes().ToString();
             }
         }
 
@@ -57,7 +57,7 @@ namespace Ejercicio2
             {
                 string p;
                 double k;
-                servicio.VerVehiculo(n,out p,out k);
+                servicio.VerVehiculo(n, out p, out k);
                 fresumen.listbBoxPatentes.Items.Add($"{k,10:f2} {p,-10}");
             }
 
@@ -73,6 +73,11 @@ namespace Ejercicio2
             }
 
             fresumen.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

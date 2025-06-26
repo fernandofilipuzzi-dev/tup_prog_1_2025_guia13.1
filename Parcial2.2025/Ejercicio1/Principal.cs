@@ -47,9 +47,9 @@ namespace Ejercicio1
 
         public void Ordenar()
         {
-            for (int p = 0; p < vehiculos-1; p++)
+            for (int p = 0; p < vehiculos - 1; p++)
             {
-                for (int c = p+1; c < vehiculos; c++)
+                for (int c = p + 1; c < vehiculos; c++)
                 {
                     if (kilometros[c] < kilometros[p])
                         Intercambiar(p, c);
@@ -103,7 +103,7 @@ namespace Ejercicio1
 
                 CargarViaje(p, k);
 
-                labelCantViajes.Text= viajes.ToString();
+                labelCantViajes.Text = viajes.ToString();
             }
         }
 
@@ -130,6 +130,11 @@ namespace Ejercicio1
             {
                 fresumen.listbBoxPatentes.Items.Add($"No hay vehiculos o viajes realizados");
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

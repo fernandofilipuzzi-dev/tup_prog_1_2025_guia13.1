@@ -124,7 +124,7 @@ namespace Ejercicio3
 
                 CargarViaje(p, k);
 
-                labelCantViajes.Text= viajes.ToString();
+                labelCantViajes.Text = viajes.ToString();
             }
         }
 
@@ -151,6 +151,11 @@ namespace Ejercicio3
             {
                 fresumen.listbBoxPatentes.Items.Add($"No hay vehiculos o viajes realizados");
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

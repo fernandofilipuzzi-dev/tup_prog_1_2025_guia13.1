@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Mo\" />
+    <Compile Remove="Mo\**" />
+    <EmbeddedResource Remove="Mo\**" />
+    <None Remove="Mo\**" />
   </ItemGroup>
 
   <ItemGroup>
