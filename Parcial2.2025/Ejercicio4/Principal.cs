@@ -75,6 +75,8 @@ namespace Ejercicio4
             {
                 fresumen.listbBoxPatentes.Items.Add($"No hay vehiculos o viajes realizados");
             }
+
+            fresumen.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
